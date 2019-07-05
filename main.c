@@ -7,31 +7,6 @@
  * Website: http://www.exploreembedded.com/wiki
  * Description: This file contains the program to read 10bit ADC value from channel 0 and send it on UART.
 
-The libraries have been tested on ExploreEmbedded development boards. We strongly believe that the
-library works on any of development boards for respective controllers. However, ExploreEmbedded
-disclaims any kind of hardware failure resulting out of usage of libraries, directly or indirectly.
-Files may be subject to change without prior notice. The revision history contains the information
-related to updates.
-
-
-GNU GENERAL PUBLIC LICENSE:
-    Copyright (C) 2012  ExploreEmbedded
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-
-Errors and omissions should be reported to codelibraries@exploreembedded.com
 **************************************************************************************************/
 #include "adc.h"
 #include "rtc.h"
@@ -47,8 +22,8 @@ float R0=10000;    // value of rct in T0 [ohm]
 float T0=298.15;   // use T0 in Kelvin [K]
 float Vout=0.0;    // Vout in A0
 float Rout=0.0;    // Rout in A0
-float T1=273.15;      // [K] in datasheet 0º C
-float T2=373.15;      // [K] in datasheet 100° C
+float T1=273.15;      // [K] in datasheet 0Âº C
+float T2=373.15;      // [K] in datasheet 100Â° C
 float RT1=35563;   // [ohms]  resistence in T1
 float RT2=549;    // [ohms]   resistence in T2
 float beta=0.0;    // initial parameters [K]
